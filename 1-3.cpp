@@ -49,7 +49,7 @@ int main(){
     clearField(input, ald);
   }while(next_permutation(l, l + N));
 
-  if(!succ) cout << "No Answer." << endl;
+  if(!succ) cout << "No Answer" << endl;
 }
 
 bool check(int l[], char *f[], int *ald[]){
@@ -111,7 +111,7 @@ bool on(int x, int y){
 void printF(char *f[]){
   for(int y = 0; y < N; y++){
     for(int x = 0; x < N; x++){
-      cout << f[y][x] << " ";
+      cout << f[y][x];
     }
     cout << endl;
   }
