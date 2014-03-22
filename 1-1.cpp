@@ -12,12 +12,12 @@ int main(){
   ans = new char[N];
   cin >> ans;
   for(int i = 0; i < N; i++){
-    check[ans[i] - '0']++;
+    check[ans[i] - '0' - 1]++;
   }
 
   int mx = 0;
   int mn = 100000;
-  for(int i = 1; i < MAXANS; i++){
+  for(int i = 0; i < MAXANS; i++){
     mx = max(mx, check[i]);
     mn = min(mn, check[i]);
   }
